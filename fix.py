@@ -94,14 +94,6 @@ if st.session_state.user is None:
 # ── Load Model ────────────────────────────────────────────────────────────────
 @st.cache_resource
 def load_model():
-    import torch
-    # Izinkan objek internal YOLO agar tidak diblokir oleh sistem keamanan PyTorch
-    try:
-        from ultralytics.nn.tasks import DetectionModel
-        torch.serialization.add_safe_globals([DetectionModel])
-    except Exception:
-        pass
-        
     return YOLO("best.pt")
 
 model = load_model()

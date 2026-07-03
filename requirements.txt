@@ -1,6 +1,8 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
 streamlit
-ultralytics
-numpy
+opencv-python-headless==4.9.0.80
+ultralytics==8.2.0
+numpy<2.0.0
 bcrypt
 streamlit-webrtc
 av

@@ -2,7 +2,7 @@ streamlit
 ultralytics
 torch==2.5.1
 torchvision==0.20.1
-opencv-python-headless==4.9.0.80
+opencv-python-headless==4.10.0.84
 bcrypt
 streamlit-webrtc
 av

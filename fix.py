@@ -1,6 +1,11 @@
 import streamlit as st
 from ultralytics import YOLO
-import cv2
+try:
+    import cv2
+except ImportError:
+    os.system("apt-get update && apt-get install -y libgl1-mesa-glx libglib2.0-0")
+    os.system("pip uninstall -y opencv-python opencv-python-headless")
+    os.system("pip install opencv-python-headless==4.6.0.66")
 import numpy as np
 from datetime import datetime
 import sqlite3

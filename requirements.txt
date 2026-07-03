@@ -5,5 +5,3 @@ numpy
 bcrypt
 streamlit-webrtc
 av
-torch
-torchvision
